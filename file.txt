@@ -1,1 +1,9 @@
-this is for practice purpose only
+# this is for practice purpose only
+#vpc
+vpc
+resource "aws_vpc" "vpc01"{
+    cidr_block = "10.0.0.0/16"
+      tags = {
+        name = "vpc1"
+      }
+}
